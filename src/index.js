@@ -12,12 +12,13 @@ import { ExampleRef } from './components/use-ref/ExampleRef'; */
 
 //import './components/use-reducer/intro-reducer';
 //import './pruebas';
-import { TodoApp } from './components/use-reducer/TodoApp';
+//import { TodoApp } from './components/use-reducer/TodoApp';
+import { MainApp } from './components/use-context/MainApp';
 
 
 ReactDOM.render(
   //<CounterHook />,
-  <TodoApp />,
+  <MainApp />,
   document.getElementById('root')
 );
 
