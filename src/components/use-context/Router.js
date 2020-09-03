@@ -20,7 +20,7 @@ export const RouterApp = () => {
         <Router>
             <div>
                 <NavBar />
-
+                <div className="container">
                 <Switch>
                     <Route exact path="/" component={ HomeScreen } />
                     <Route exact path="/about" component={ AboutScreen } />
@@ -28,6 +28,7 @@ export const RouterApp = () => {
                     <Route component={ NotFoundPage } />
                     {/* <Redirect to="/" /> */}
                 </Switch>
+                </div>
             </div>
         </Router>
     )

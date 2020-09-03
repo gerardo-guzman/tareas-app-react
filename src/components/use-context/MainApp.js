@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { RouterApp } from './Router';
+import { UserContext } from './UserContext';
 
 export const MainApp = () => {
+
+    const [user, setUser] = useState({
+        //
+    });
     return(
-        <div>
+        <UserContext.Provider value={{
+            user,
+            setUser
+        }}>
             <RouterApp />
-        </div>
+        </UserContext.Provider>
     )
     
 }
